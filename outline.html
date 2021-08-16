@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Created by - Binayak Ghosal. This is a simple calculator made with the help of HTML, CSS and JavaScript.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Calculator </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="calculator.js"></script>
+    </head>
+
+    <body>
+        <h1> Calculator </h1>
+        <div class="calculator">
+        <form name="form">
+            <input class="textview" name="textview" id="main-display">
+        </form>
+            <table class="margin-top">
+                <tr class="buttons">
+                    <td><input type="button" value="AC" onclick="totalClear();" id="clean" class="clean"></td>
+                    <td><input type="button" value="C" onclick="clean();" id="clean" class="clear"></td>
+                    <td><input type="button" value="+" onclick="getInputValue('+');" id="myInput"></td>
+                    <td><input type="button" value="-" onclick="getInputValue('-');" id="myInput"></td>
+                </tr>
+                <tr class="buttons">
+                    <td><input type="button" value="9" onclick="getInputValue(9);" id="myInput"></td>
+                    <td><input type="button" value="8" onclick="getInputValue(8);" id="myInput"></td>
+                    <td><input type="button" value="7" onclick="getInputValue(7);" id="myInput"></td>
+                    <td><input type="button" value="*" onclick="getInputValue('*');" id="myInput"></td>
+                </tr>
+                <tr class="buttons">
+                    <td><input type="button" value="6" onclick="getInputValue(6);" id="myInput"></td>
+                    <td><input type="button" value="5" onclick="getInputValue(5);" id="myInput"></td>
+                    <td><input type="button" value="4" onclick="getInputValue(4);" id="myInput"></td>
+                    <td><input type="button" value="/" onclick="getInputValue('/');" id="myInput"></td>
+                </tr>
+                <tr class="buttons">
+                    <td><input type="button" value="3" onclick="getInputValue(3);" id="myInput"></td>
+                    <td><input type="button" value="2" onclick="getInputValue(2);" id="myInput"></td>
+                    <td><input type="button" value="1" onclick="getInputValue(1);" id="myInput"></td>
+                    <td rowspan="5"><input type="button" value="=" onclick="equals();" id="equals" class="equalButton"></td>
+                </tr>
+                <tr class="buttons">
+                    <td><input type="button" value="%" onclick="getInputValue('%');" id="myInput"></td>
+                    <td><input type="button" value="0" onclick="getInputValue(0);" id="myInput"></td>
+                    <td><input type="button" value="." onclick="getInputValue('.');" id="myInput"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
